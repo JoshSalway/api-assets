@@ -17,8 +17,8 @@ jobs:
       run: |
         git remote add upstream https://github.com/pubg/api-assets.git
         git fetch upstream
-        git merge upstream/main --no-edit
-        git push origin main
+        git merge upstream/master --no-edit
+        git push origin master
 
     - name: Publish to npm
       if: ${{ success() }}
